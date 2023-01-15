@@ -75,7 +75,7 @@
     border: 1px solid transparent;
     padding: 20px 40px;
     font-family: inherit;
-    background-color: #1a1a1a;
+    background-color: #555;
     cursor: pointer;
     transition: border-color 0.25s;
     top: 10px;
@@ -111,4 +111,10 @@
         flex-direction: column;
     }
 
+}
+
+@media screen and (prefers-color-scheme: light) {
+    .back_button>svg {
+        filter: invert(1);
+    }
 }
