@@ -6,9 +6,9 @@ import EpisodePage from '../../pages/EpisodePage'
 export default function RouteController() {
     return (
         <Switch>
-            <Route path='/' component={SearchPage}></Route>
-            <Route path='/character/:id' component={CharacterPage}></Route>
-            <Route path='/episode/:id' component={EpisodePage}></Route>
+            <Route path='/' ><SearchPage></SearchPage></Route>
+            <Route path='/character/:id' ><CharacterPage></CharacterPage></Route>
+            <Route path='/episode/:id' ><EpisodePage></EpisodePage></Route>
         </Switch>
     )
 }
