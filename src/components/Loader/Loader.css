@@ -1,0 +1,30 @@
+.loader {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.loader>img {
+    display: flex;
+    width: 30%;
+    animation: loaderAnim 1s infinite;
+}
+
+@keyframes loaderAnim {
+    0% {
+        opacity: .1;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .1;
+    }
+
+}

@@ -1,0 +1,30 @@
+.episode_card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    border: 1px solid gray;
+    margin: 15px 0px;
+    padding: 15px 30px;
+}
+
+.episode_card>h1 {
+    font-size: calc(10px + 2vmin);
+    text-decoration: underline;
+}
+
+.episode_card>span {
+    font-size: calc(5px + 2vmin);
+    color: gray;
+}
+
+.episode_characters {
+
+    display: grid;
+    margin: 20px;
+    width: auto;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    margin-top: 10px;
+    flex-direction: column;
+}

@@ -1,0 +1,114 @@
+.character_page {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.character_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.allCharInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.character_info>img {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: auto;
+    display: flex;
+    border-radius: 50%;
+
+    transition: all .2s ease-in-out;
+}
+
+.character_info>img:hover {
+    border-radius: 5px;
+    transform: scale(1.5);
+}
+
+.char_name {
+    display: flex;
+    font-size: calc(30px + 2vmin);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 3px solid gray;
+    font-weight: 900;
+}
+
+.char_info {
+    display: flex;
+    color: gray;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.char_subtitle {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-bottom: 3px solid gray;
+    font-size: calc(10px + 2vmin);
+    font-weight: 900;
+}
+
+.back_button {
+    display: flex;
+    position: fixed;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 20px 40px;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    top: 10px;
+    left: 10px;
+}
+
+.back_button>svg {
+    display: flex;
+    width: 20px;
+    height: 20px;
+}
+
+
+.back_button:hover {
+    border-color: #646cff;
+}
+
+.back_button:focus,
+.back_button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.char_episodes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .allCharInfo {
+        flex-direction: column;
+    }
+
+}
