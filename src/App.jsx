@@ -1,5 +1,5 @@
 import './App.css'
-import { Route, useLocation } from 'wouter'
+import { Route, Switch, useLocation } from 'wouter'
 import SearchPage from './pages/SearchPage'
 import CharacterPage from './pages/CharacterPage'
 import EpisodePage from './pages/EpisodePage'
@@ -13,9 +13,11 @@ function App() {
       <button onClick={() => {
         pushLocation('/')
       }} className='logo'><img src={Logo} alt="" /> <span>by Aruger.dev</span></button>
-      <Route path='/' component={SearchPage}></Route>
-      <Route path='/character/:id' component={CharacterPage}></Route>
-      <Route path='/episode/:id' component={EpisodePage}></Route>
+      <Switch>
+        <Route path='/' component={SearchPage}></Route>
+        <Route path='/character/:id' component={CharacterPage}></Route>
+        <Route path='/episode/:id' component={EpisodePage}></Route>
+      </Switch>
       <SocialNetworks></SocialNetworks>
     </div>
   )
