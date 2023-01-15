@@ -2,7 +2,7 @@ import './App.css'
 import { useLocation } from 'wouter'
 import Logo from './assets/loader-logo.png'
 import SocialNetworks from './components/SocialNetworks'
-import RouteController from 'components/RouteController'
+import RouteController from './components/RouteController'
 function App() {
   const [location, pushLocation] = useLocation();
 
