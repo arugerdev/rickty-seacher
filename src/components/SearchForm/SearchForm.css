@@ -18,20 +18,23 @@
     border: none;
     border-radius: 20px;
     padding: 6px 16px;
-    
+    background: gray;
+
     transition: all .15s ease-in-out;
 }
 
 .searchButton {
     display: flex;
+    background: gray;
+    font-weight: 600;
     margin-left: 50px;
     transition: all .15s ease-in-out;
 }
 
 .searchInput:hover {
-    transform: scale(1.05);
     border: 1px solid #646cff;
 }
+
 .searchButton:hover {
-transform: scale(1.05);    
+    transform: scale(1.05);
 }

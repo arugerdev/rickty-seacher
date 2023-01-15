@@ -7,12 +7,12 @@
     align-items: center;
     justify-content: center;
     padding: 5px 10px;
-    background: #111;
+    background: gray;
     border-radius: 30px;
     transform-origin: center;
     bottom: 5px;
     align-self: center;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px gray;
 }
 
 .socialNet-Button>img {
