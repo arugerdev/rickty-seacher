@@ -18,7 +18,8 @@
     border: none;
     border-radius: 20px;
     padding: 6px 16px;
-    background: gray;
+    color: #555;
+    background: #eee;
 
     transition: all .15s ease-in-out;
 }
